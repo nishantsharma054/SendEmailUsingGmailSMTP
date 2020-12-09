@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="icon" href="images/logo.png" type="image/png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/fontawesome-all.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <style>
+          .error{
+              color: red;
+              font-size: 13px;
+          }
+      </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div  class="d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <button onclick='window.scrollTo({top:0, behavior: "smooth"});'>
+                            <img src="images/logo.png" style="width:90px;">
+                        </button>
+                    </div>
+                    <ul class="header_menu d-flex">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#whoweare">Who We Are</a></li>
+                        <li><a href="#whatwedo">What We Do</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contactus">Contact</a></li>
+                        <span class="close-menu" id="menuClose"></span>
+                    </ul>
+                </div>
+
+                <a href="javascript:;" class="mob-menu" id="menuShow">
+                    <span class="menu-bar"></span>
+                </a>
+                
+            </div>  
+        </header>
+        <section class="banner_section  position-relative" id="home">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <img src="images/banner-carosal-image3.jpg" class="w-100" style="height:500px;"> 
+                        <div class="carousel-caption  text-left  d-md-block">
+                            <p class="mb-5 pb-5" data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">Market, scenario + internal analysis </p>
+                            <p data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                            <span style="color:#29B7E5;">Strategic planning</span> to drive higher performance.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner-carosal-image2.jpg" class="w-100" style="height:500px;"> 
+                        <div class="carousel-caption  text-left  d-md-block">
+                            <p class="mb-5 pb-5" data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><span style="color:#29B7E5;">Integrated communications </span>
+                            <p data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                            Deep insights + compelling messages to promote reputations.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item"> 
+                        <img src="images/banner-carosal-image1.jpg" class="w-100" style="height:500px;">
+                        <div class="carousel-caption  text-left  d-md-block">
+                            <p class="mb-5 pb-5" data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><span style="color:#29B7E5;">Identify opportunities</span> over-the-horizon 
+                            <p data-aos="fade-down" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500"> 
+                            Stay ahead of the industry + the competition.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus_section pt-5 pb-5" id="whoweare">
+            <div class="container">
+                <div class="common_heading text-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                    <h2 class="mt-0 mb-5 d-inline-block position-relative">Who We Are</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                    <p>We provide high impact strategic advisory, communications, digital technology and specialist events services across a spectrum of international trade and services sectors.</p>
+                    <p class="sidecolor position-relative" style="padding-left:40px;">Our role is to take on the burden of challenges faced by our clients by developing tailored solutions for project and campaign requirements to ensure goals can be achieved strategically and on time, every time. A partner our clients can rely on, we are on standby to provide strategic advice and project support where and when needed and help transform strategic intent into strategic impact.</p><span id="dots" style="opacity:0;">...</span>
+                     
+                </div>
+                <div id="more" class="mb-3 mt-3">
+                    <p class="mb-4">Bringing together more than 50 years of experience working in the Arab Gulf across multiple sectors with high profile clients including government and leading corporate entities, we combine deep industry knowledge, subject matter expertise and the proven capabiltiy to deliver results.</p> 
+                    <div class="mainbox mt-3 mb-4">
+                    Bringing together sector-specific expertise with international experience and proven
+                    technical competencies, we leverage a trusted professional network across various
+                    sectors to generate insight and inform strategy planning and execution.
+                    </div>
+                    <hr style="margin: 0 0 30px;border-top: 2px solid #29B7E5;">
+                    <p class="mb-5">Combined with a deep understanding of local markets, market trends and
+                    commitment to best-in-class service delivery, we are able to help clients consolidate
+                    their market position, develop market entry strategies for new brands, products and
+                    services, or provide tailored support for externally-focused projects. </p>
+                </div>
+                <div class="text-center">
+                    <button onclick="myFunction()" id="myBtn" class="btn btn-blue">Read more...</button>
+                </div>
+            </div>
+        </section>
+        <section class="wedo_section pt-0" id="whatwedo">
+            <div class="container">
+                <div class="common_heading text-center mt-2" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                    <h2 class="mt-0 mb-5 d-inline-block position-relative">What We Do</h2>
+                </div>
+                <p data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">Our activities encompass everything from strategic planning and communications to
+                project management. Our expertise and past work spans across different sectors,
+                working with high profiles clients across a range of activities and focus areas.</p>
+                <div style="padding:30px 15px;background-color:#f2f2f2;margin:40px 0;">   
+                    <div class="common_heading text-center">
+                        <h2 class="mt-0 mb-4 d-inline-block position-relative font-weight-normal" style="font-size:16px;">Our Sectors</h2>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="col-md-5">
+                            <p style="font-weight:600;font-size:17px;">
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Banking, Finance + Insurance <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Defense + Space <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Events + Tradeshows <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Energy + Environment <br>
+                                
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p style="font-weight:600;font-size:17px;">
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Government + NGOs <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> Healthcare, Hospitality + Tourism <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> HR Development + Education <br>
+                                <i class="fas fa-circle" style="font-size: 10px;vertical-align: middle;margin-right: 10px;"></i> International Trade + Investment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <span id="dots1" style="opacity:0;"></span>
+                
+                <div id="more1" class="mb-3 mt-3">
+                    <p>Whether it is developing a go-to-market strategy or designing marketing campaigns,
+                    customer relations management or enhancing market positioning, we apply trusted
+                    insight, robust methodologies and harness the power of digital technology to achieve
+                    KPIs and unlock new opportunities for the future.</p>
+                    <p>Get in touch with us to understand more about who we work with and the kind of
+                    activities we are involved with by emailing <a href="mailto:contact@spps.ae">contact@spps.ae</a></p>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-1 space-color">
+                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="pl-3 pr-3">
+                                <b style="font-size:20px;">Identifying opportunity. Unlocking new value.</b> <br>
+                                The future is built by what happens
+                                today and our aim is to link current
+                                activities to longer term growth and
+                                transformation objectives, which we do
+                                by placing knowledge management at
+                                the core of our approach. Knowledge
+                                is a critical enterprise resource and by
+                                focusing on effective knowledge
+                                discovery and sharing we are able to
+                                unlock new opportunities for the future.
+                                Opportunity identification can help
+                                reveal innovative and attractive
+                                strategic opportunities on the horizon
+                                before your competition does. What’s
+                                needed?
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p class="pl-3 pr-3">
+                                <b>Market and situational analysis -</b>
+                                 to illuminate economic and political
+                                trends and risks, industry and
+                                competitor factors and key value
+                                drivers. <br><br>
+                                <b>Scenario analysis – </b>  to explore and
+                                understand future scenarios developed
+                                through rigorous market and
+                                situational analysis. <br><br>
+                                <b>Internal analysis –</b> 
+                                discover distinct
+                                but underutilized capabilities, market
+                                focus, positioning and performance
+                                anatomy realignment which can help
+                                drive higher performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button onclick="myFunction1()" id="myBtn1" class="btn btn-blue">Read more...</button>
+                </div>
+                <div class="mt-5 pt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div  data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/153555258?autoplay=1&loop=1" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe> -->
+                                <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                           <img src="images/Word-Art-3.jpeg" class="w-100" style="height:430px;">  
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/Word-Art-2.jpeg" class="w-100" style="height:430px;">  
+                                        </div>
+                                        <div class="carousel-item"> 
+                                            <img src="images/Word-Art-1.jpeg" class="w-100" style="height:430px;"> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="margin-top: -10px;" data-aos="fade-left" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                <p style="font-weight:600;font-size:17px;" class="mb-0">
+                                    In a world where there is more disruption than ever before, the ability to change effectively is more critical than ever. But change is not a one-time event, it’s ongoing.</p>
+                                    <p> Future-proofing long-term business success in today’s marketplace requires us to continue the discovery process and harness new strategies effectively. Harnessing thorough, data-driven analysis we help our clients plan for the future and stay ahead of the industry and the competition. With integrated, knowledge-driven approaches we can solve complex challenges and tame ‘wicked problems’ to unlock new value. From the drawing board to being in the field, we partner with our clients to provide support through the journey to achieve growth and transform positively.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services_section pt-0" id="services">
+            <div class="common_heading text-center" style="background-color:#fff;">
+                <h2 class="mt-0 mb-5 d-inline-block position-relative">Services</h2>
+            </div>
+            <div class="services_section_bg" style="padding:2rem 0 0rem;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="services_box mb-4 text-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                                <!-- <a href="#strategy" class="d-block"> -->
+                                    <figure class="mb-4">
+                                        <img src="images/strategy-white.png">
+                                    </figure>
+                                    <!-- <h5>Strategy</h5> -->
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="services_box mb-4 text-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                                <!-- <a href="#communications" class="d-block"> -->
+                                    <figure class="mb-4">
+                                        <img src="images/communication-white.png">
+                                    </figure>
+                                    <!-- <h5>Communications</h5> -->
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="services_box mb-4 text-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                                <!-- <a href="#technology" class="d-block"> -->
+                                    <figure class="mb-4">
+                                        <img src="images/globe-white.png">
+                                    </figure>
+                                    <!-- <h5>Digital Technology</h5> -->
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="services_box mb-4 text-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500">
+                                <!-- <a href="#events" class="d-block"> -->
+                                    <figure class="mb-4">
+                                        <img src="images/event-management-software-white.png">
+                                    </figure>
+                                    <!-- <h5>Specialist Events</h5> -->
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="accordion" id="servicesaccordiain">
+                    <div class="card mt-5" id="strategy">
+                        <div class="services_description">
+                            <div class="card-header" id="faqhead1">
+                                <a href="javascript:void(0)" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
+                                aria-expanded="true" aria-controls="faq1">Strategy</a>
+                            </div>
+                            <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#servicesaccordiain">
+                                <div class="card-body">
+                                    
+                                    <div class="d-flex align-items-center mt-5 mb-5" style="max-width: 700px;margin: 0 auto">
+                                        <div class="borderbox mb-3" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                            <b>Strategy</b> <br>
+                                            From strategy design to
+                                            execution roadmaps,
+                                            understanding geopolitical risks
+                                            and knowledge management,
+                                            we have solutions to support
+                                            clients across multiple
+                                        </div>
+                                        <div class="sideimg">
+                                            <img src="images/strategy-img.jpg" style="height:350px;">
+                                        </div>
+                                    </div>
+                                    <p class="boxquote" style="background-color:#fff;padding:50px 120px;margin:50px 0;box-shadow: 0 0 30px #777;line-height:40px;font-size: 18px;font-family: 'Open Sans', sans-serif;" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><sup style="color:#29B7E5;margin:0 5px;font-size: 22px;"><i class="fas fa-quote-left"></i></sup>The essence of strategy is choosing what not to do. Strategy is about making
+                                    choices, it’s about trade-offs and deliberately choosing to be different. With effective
+                                    strategy, we can gain clarity and make informed choices early by anticipating shifts
+                                    in the competitive environment and identifying opportunities before the competition
+                                    does.<sup style="color:#29B7E5;margin:0 5px;font-size: 22px;"><i class="fas fa-quote-right"></i></sup></p>
+                                    <div class="banner_carousel mb-5 mt-5">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                   <img src="images/strategy-banner.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">Define your strategic partnerships to generate powerful impacts</p>
+                                                        <p data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="500"><span style="color:#29B7E5;"> Partnership Analysis + Integration</span> to help unlock new value.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/strategy-banner-2.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Bringing clarity to complex political risks and regulatory issues </p>
+                                                        <p>On-demand <span style="color:#29B7E5;">Political Risk Analysis + Situational Reports</span> to support business-critical decision.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item"> 
+                                                    <img src="images/strategy-banner-3.jpg" class="w-100" style="height:400px;">
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Market entry strategy</p>
+                                                        <p>Our <span style="color:#29B7E5;">Market + Competitor Analysis</span> is the starting point</p>
+                                                    </div> 
+                                                </div>
+                                                <div class="carousel-item"> 
+                                                    <img src="images/strategy-banner-4.jpg" class="w-100" style="height:400px;">
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p><span style="color:#29B7E5;">Project Management Support</span> for external projects, from trade promotion and marketing to customer relations management</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                                <b class="mb-3  d-inline-block">Strategic Planning</b> <br>
+                                                We understand the need to prioritize
+                                                strategic investments to meet short-
+                                                term needs and long-term goals.
+                                                Harnessing thorough, data-driven
+                                                analysis we help clients plan for the
+                                                future and stay ahead of the industry
+                                                and the competition. Utilizing facilitated
+                                                strategic planning sessions and the
+                                                right combination of expertise we
+                                                develop: Strategy Design at the
+                                                Corporate, Business Unit or Product
+                                                level; Vision, Guiding Principles, and
+                                                Strategic Imperatives; Goals and
+                                                KPIs/Metricsm, and; Execution
+                                                Roadmaps.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="300">
+                                                <b class="mb-3  d-inline-block">Country Assessments, Political
+                                                Risk Analysis + Situational Reports</b> <br> We provide clients with clear analysis
+                                                of complex political risk and regulatory
+                                                issues to keep them abreast of critical political developments and evolving
+                                                public policy debates. Exploiting a
+                                                range of analytical tools and research
+                                                methods we provide political risk
+                                                assessments and situational reports
+                                                that are designed to bring clarity to
+                                                ambiguous environments and
+                                                scenarios and support better informed
+                                                enterprise decision-making.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                                <b class="mb-3 mt-3 d-inline-block">Market + Competitor Analysis</b> <br>
+                                                Our market and competitor analysis is
+                                                designed to illuminate economic and
+                                                political trends and risks, industry and
+                                                competitor factors and key value
+                                                drivers. We combine quantitative and
+                                                qualitative assessment of a market, its
+                                                size in volume, value and growth
+                                                potential, customer segments and
+                                                buying patterns, competitors, their
+                                                value drivers and market share, and
+                                                the broader economic environment in terms of barriers to entry and
+                                                regulation.
+                                                
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="300">
+                                                <b class="mb-3 mt-3 d-inline-block">Knowledge Management</b> <br>
+                                                The purpose of KM is to improve
+                                                organizational performance and be
+                                                able to retain knowledge at the
+                                                organizational level. Knowledge is
+                                                argubly our most important enterprise
+                                                resource today and its management
+                                                involves discovering, capturing,
+                                                structuring, storing and sharing
+                                                knowledge within our organization. We
+                                                work closely with our clients to build a
+                                                KM strategy and
+                                                execution roadmap which will enrich
+                                                their long-term performance and
+                                                development.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                                <b class="mb-3 mt-3 d-inline-block">Partnership Analysis + Integration</b> <br>
+                                                There is a reason why strategic
+                                                partnerships are becoming more
+                                                important than traditionally favoured
+                                                growth strategies among leaders
+                                                today. Strategic partnerships can
+                                                unlock value, create new opportunities,
+                                                and drive higher performance in
+                                                unique ways. Effectively defining new
+                                                strategic partnerships or strengthening
+                                                existing ones can generate the
+                                                synergies needed to deliver optimised
+                                                results. We help clients to build
+                                                partnerships that are truly integrated
+                                                into strategy.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3 mt-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="300">
+                                                <b class="mb-3 d-inline-block">Scenario Planning + Analysis</b><br>
+                                                Even when the rate of change is
+                                                accelerated, the future might not hold
+                                                what we expect. Scenario planning
+                                                and analysis helps identify a specific
+                                                set of uncertainties or ‘alternative
+                                                realities’ of what might happen in the
+                                                future. Taking a collaborative approach
+                                                to planning we work with to explore
+                                                key trends and driving forces. With
+                                                facilitated sessions and trusted
+                                                external insights, we build an explicit picture of the future and anticipate
+                                                what is going to happen based on
+                                                experiences of the past.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3 mb-0" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                                <b class="mb-3 mt-3 d-inline-block">Project Services</b><br>
+                                                ‘Projectification’ is happening more than ever. Adhering to budgets, managing risks
+                                                and scope changes is critical for keeping projects on track for successful completion.
+                                                Working onsite at your office or ours we can provide PM support, from interfacing
+                                                with end-users to gather project requirements to reporting on the progress of projects
+                                                with powerful visualization tools. We can plan and coordinate project assignments,
+                                                schedules, goals and milestones across remote teams and help you capture project
+                                                knowledge for future use.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3 mb-0" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="300">
+                                                <b class="mb-3 mt-3 d-inline-block">White Papers +  Briefing Papers </b><br>
+                                                White papers and background briefing papers are highly valuable aides that provide in-depth information and insights into complex concepts, challenges and scenarios. With their singular focus, these papers can educate decision-makers and stakeholders on the nuances and precise nature of challenges they face and help better understand solutions using persuasive logic and reasoning. We can produce high quality papers on-demand across a range of focus a and technical areas, from trade promotion to technology acquisition to performance improvement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                                        <b class=" mt-3 d-inline-block"> Is this interesting?</b> 
+                                        Let’s talk more about what we can do – get in touch by sending an email to <a href="mailto:contact@spps.ae">contact@spps.ae</a> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4" id="communications">
+                        <div class="services_description">
+                            <div class="card-header" id="faqhead2">
+                                <a href="javascript:void(0)" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                aria-expanded="false" aria-controls="faq2">Communications</a>
+                            </div> 
+                             <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#servicesaccordiain">
+                                <div class="card-body"> 
+                                    <div class="d-flex align-items-center mt-5 mb-5" style="max-width:700px;margin:0 auto;">
+                                        <div class="borderbox mb-3">
+                                            <b>Communications</b> <br>
+                                         From political communications
+                                        + advocacy to CSR and
+                                        marketing communications, we
+                                        help clients immediate and
+                                        long-term objectives through
+                                        integrated communications.
+                                        </div>
+                                        <div class="sideimg">
+                                            <img src="images/communication-img.jpg" style="height:350px;">
+                                        </div>
+                                    </div>
+                                    <p class="boxquote" style="background-color:#fff;padding:50px 120px;margin:50px 0;box-shadow: 0 0 30px #777;line-height:40px;font-size: 18px;font-family: 'Open Sans', sans-serif;" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-left"></i></sup>Helping clients clarify, persuade and ensure that the right message reaches the right
+                                    audience at the right time. Our integrated communications solutions are designed to
+                                    improve visibility and strengthen relationships and reputation among key
+                                    stakeholders.<sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-right"></i></sup></p>
+                                    <div class="banner_carousel mb-5 mt-5">
+                                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                   <img src="images/communication-banner.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Shape political debates. Change perceptions. Influence outcomes.</p>
+                                                        <p> <span style="color:#29B7E5;">Political Communications + Advocacy</span> to keep you on top.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/communication-banner-2.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Making business more responsible and business development more dynamic</p>
+                                                        <p>We develop innovative <span style="color:#29B7E5;">CSR programs</span> that improve your visibility and strengthen stakeholder relationships.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item"> 
+                                                    <img src="images/communication-banner-3.jpg" class="w-100" style="height:400px;">
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Your audience is constantly interacting with your brand identity in dozens of ways</p>
+                                                        <p>Our <b style="color:#29B7E5;font-weight:normal;">Integrated Campaigns</b> 
+                                                            help you create a united approach that increases confidence, engagement,and growth in your brand. </p>
+                                                        
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p><b  class="mt-5 mb-3 d-inline-block">Political Communications + Advocacy</b> <br>
+                                    Putting the right case before exactly the right audience can facilitate desirable
+                                    outcomes to be achieved. We build campaigns that can help shape political debates,
+                                    change perceptions and influence outcomes. Our integrated approach to
+                                    communications strategy is designed to put compelling messages, developed and
+                                    informed through deep insights from trusted experts and influencers, in front of
+                                    critical audiences.</p>
+                                    <p><b  class="mt-5 mb-3 d-inline-block">Corporate Social Responsibility (CSR)</b><br>
+                                        We help clients establish strong CSR profiles to improve visibility and strengthen
+                                        their relationships and reputation among key stakeholders. CSR can be a highly
+                                        valuable source of competitive advantage enabled by embracing a wide array of
+                                        stakeholders. We can help develop and execute CSR initiatives that demonstrate a
+                                        company’s market positioning, focus attention on key markets and business
+                                        initiatives and spotlights commitment and solutions to complex social challenges.
+                                    </p>
+                                    <p class="mb-5"><b  class="mt-5 mb-3 d-inline-block">Marketing Communications </b>  <br>
+                                   Focusing on new market entry or expansion, our data-driven marketing solutions
+                                    drive customer growth and loyalty. We enrich and promote reputations by connecting
+                                    brands with customers through action-focused, integrated, often disruptive
+                                    campaigns and content. Our expertise lies in creating authentic experiences that
+                                    raise awareness, drive engagement and influence choice. Editorially-minded at
+                                    heart, our narratives and content combine strategic rigour with creativity to deliver
+                                    tangible positive outcomes.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3  d-inline-block">Segmentation + Targeting</b> <br>
+                                                Understanding your audience is a
+                                                critical part of a successful marketing
+                                                strategy. Our solutions enable you to
+                                                efficiently move customers from
+                                                awareness to advocacy, with effective
+                                                measurement.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3 d-inline-block">Planning + Implementation</b> <br>
+                                                Establishing KPIs aligned with
+                                                business strategy and true
+                                                performance is vital in tracking
+                                                progress and understanding how
+                                                customers are being engaged. We
+                                                help accurately reporting each step of
+                                                the journey and how it fits into the big
+                                                picture..
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row justify-content-center">
+                                         <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3 mt-3 d-inline-block">Brand Messaging</b> <br>
+                                                We help your brand cut through the
+                                                noise with a brand message that is
+                                                clear and compelling to drive genuine
+                                                engagement with your customers and
+                                                build loyalty.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3 mt-3 d-inline-block">Integrated Campaigns</b> <br>
+                                                The world is constantly interacting with
+                                                your digital identity in dozens of ways.
+                                                We help you create a united approach
+                                                through integrated campaigns that
+                                                increase customer confidence,
+                                                engagement, and growth.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3 mt-3 d-inline-block">Content Creation + Planning</b> <br>
+                                                We help develop, execute, and
+                                                analyze a content strategy that’s
+                                                tailored to your business and target
+                                                audience. With this cohesive
+                                                approach, your business can earn
+                                                dividends well into the future.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3 mt-3 d-inline-block">Web Data + Social Media</b> <br>
+                                                We have the capability to collect and
+                                                distil large amounts of online
+                                                information, including social media data sources and analyses. We 
+                                                perform targeted searches and data
+                                                collection using scraping techniques
+                                                with proprietary and third-party tools.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row justify-content-center">
+                                         <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3 mb-0">
+                                                <b class="mb-3 mt-3 d-inline-block">E-Mail Marketing</b> <br>
+                                                Success e-mail marketing leverages
+                                                the latest strategic tactics and
+                                                technological advances to create
+                                                campaigns backed by analytic insights
+                                                that optimize clickthrough rates,
+                                                engagement, and results.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3 mb-0">
+                                                <b class="mb-3 mt-3 d-inline-block">Arabic Translation + Copywriting </b> <br>
+                                               We provide specialist Arabic
+                                                translation services for almost anything
+                                                you require across key industry
+                                                sectors. Our native linguists have the
+                                                technically competencies and industry
+                                                experience to meet your requirements.
+                                            </p>
+                                        </div>      
+                                    </div>
+
+                                    <p class="mt-3">
+                                        <b class=" mt-3 d-inline-block"> Is this interesting?</b> 
+                                        Let’s talk more about what we can do – get in touch by sending an email
+                                        to  <a href="mailto:contact@spps.ae">contact@spps.ae</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4" id="technology">
+                        <div class="services_description">
+                            <div class="card-header" id="faqhead3">
+                                <a href="javascript:void(0)" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                                aria-expanded="false" aria-controls="faq3">Digital Technology</a>
+                            </div>
+                            <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#servicesaccordiain">
+                                <div class="card-body"> 
+                                    
+                                    <div class="d-flex align-items-center mt-5 mb-5" style="max-width:700px;margin:0 auto;">
+                                        <div class="borderbox mb-3" style="max-width:280px;">
+                                             <b>  Digital Technology </b><br>
+                                                 Solving real-world business challenges through digital
+                                                performance optimisation,
+                                                application, web + mobile
+                                                development solutions
+                                        </div>
+                                        <div class="sideimg">
+                                            <img src="images/technology-img.jpg" style="height:350px;">
+                                        </div>
+                                    </div>
+                                    <p class="boxquote" style="background-color:#fff;padding:50px 120px;margin:50px 0;box-shadow: 0 0 30px #777;line-height:40px;font-size: 18px;font-family: 'Open Sans', sans-serif;"   data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-left"></i></sup>People spend their lives across devices and your digital experience should do the same. We develop powerful digital experiences through a continuous improvement mindset. From design and implementation to optimization, we believe in being innovative and taking data-driven decisions to deliver digital performance to set your growth on a new trajectory.<sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-right"></i></sup></p>
+                                    
+                                    <div class="banner_carousel mb-5 mt-5">
+                                        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                   <img src="images/technology-banner.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4"><span style="color:#29B7E5;">SEO can drive big results or it can kill your rankings</span></p>
+                                                        <p>Data-driven and human-inspired SEO solutions to keep you ahead.</p> 
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/technology-banner-2.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption text-left  d-md-block">
+                                                         <p class="mb-5 pb-4">Keep your digital performance optimized.</p>
+                                                        <p>New isn’t always better. Our <span style="color:#29B7E5;">Site Restructuring + Optimization</span> solutions will deliver continuous improvement to your current website.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item"> 
+                                                    <img src="images/technology-banner-3.jpg" class="w-100" style="height:400px;">
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-2">Build the perfect digital experience across mobile, desktop and tablet that solve real business-challenges.</p>
+                                                        <p><span style="color:#29B7E5;">Digital solutions</span> that solve real business-challenges. </p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3"><b class="mb-3  d-inline-block">Application, Web + Mobile
+                                            Development </b> <br>
+                                            Consumers spend their lives across
+                                            devices and your digital experience
+                                            should do the same. Our developers
+                                            build pixel-perfect digital experiences
+                                            across mobile, desktop and tablet.
+                                            Taking an Agile approach to
+
+                                            development, we  build industry-leading applications that solve real-world  challenges digitally.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3"><b class="mb-3  d-inline-block">Search Engine Optimization </b> <br>
+                                            Data-driven SEO strategies can drive
+                                            big results. On the other hand, using
+                                            outdated SEO approaches will actively
+                                            kill rankings. Our SEO services are
+                                            human-inspired, research-oriented and
+                                            will drive high impact digital
+                                            performance by keeping your strategy
+                                            refreshed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3"><b class="mb-3 mt-3 d-inline-block">Site Restructuring + Optimization</b><br>
+                                            Long-term success hinges on a
+                                            commitment to continuous
+                                            improvement. This is especially true in
+                                            digital strategy and performance. We
+                                            believe in being innovative and taking
+                                            data-driven decisions to continuously
+                                            optimize digital performance.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3"><b class="mb-3 mt-3 d-inline-block">User Experience + Responsive
+                                            Design </b><br>
+                                            The power of design can transform
+                                            vision into reality and our responsive
+                                            design services can deliver the
+                                            experience you want your users to
+                                            have, from start to finish. The most
+                                            powerful elements of design are those
+                                            which you cannot see and our UX
+                                            experts focus on breaking barriers to
+                                            create seamless user experiences.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5  justify-content-center">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3 mb-0">
+                                                <b class="mb-3 mt-3 d-inline-block">Brand Creation + Style Guides</b> <br>
+                                                A brand is more than just colors and
+                                                styles, it’s your identity. Our branding
+                                                service works alongside you to capture
+                                                your true identity and bring it to life
+                                                with a consistent design look and feel
+                                                across platforms and devices to build a
+                                                cohesive brand.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3 mb-0">
+                                               <b class="mb-3 mt-3 d-inline-block">CMS Implementation</b><br>
+                                                Content is king because we can create
+                                                remarkable value with it. We shouldn’t
+                                                be limiting how we can use and exploit
+                                                content. Our experts can help identify
+                                                the right CMS platform for your
+                                                organization and get it live so you can
+                                                focus on unlocking new value and new
+                                                opportunities to engage your audience.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3">
+                                        <b class=" mt-3 d-inline-block"> Is this interesting?</b> 
+                                        Let’s talk more about what we can do – get in touch by sending an email
+                                        to <a href="mailto:contact@spps.ae">contact@spps.ae</a> and we’ll ring you back to set-up a face-to-face or virtual meeting.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4"  id="events">
+                        <div class="services_description">
+                            <div class="card-header" id="faqhead4">
+                                <a href="javascript:void(0)" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                                aria-expanded="false" aria-controls="faq4">Specialist Events</a>
+                            </div>
+                            <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#servicesaccordiain">
+                                <div class="card-body"> 
+                                   
+                                    <div class="d-flex align-items-center mt-5 mb-5" style="max-width:700px;margin:0 auto;">
+                                        <div class="borderbox mb-3">
+                                           <b> Specialist Events</b> <br>
+                                        Solutions to deliver powerful
+                                            live, virtual and hybrid event
+                                            experiences for conferences,
+                                            seminars and workshops that
+                                            are interactive and immersive
+                                            in new ways.
+                                        </div>
+                                        <div class="sideimg">
+                                            <img src="images/events-img.jpg" style="height:350px;">
+                                        </div>
+                                    </div>
+                                    <p class="boxquote" style="background-color:#fff;padding:50px 120px;margin:50px 0;box-shadow: 0 0 30px #777;line-height:40px;font-size: 18px;font-family: 'Open Sans', sans-serif;" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100"><sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-left"></i></sup>Taking events into a new dimension, accessible on desktop, laptop, mobile and headset, we
+                                    optimize event experience and marketing strategies by harnessing innovative, cutting-edge
+                                    digital technologies. Our integrated event solutions to deliver a seamless experience, from
+                                    registration, to attendee tracking, and delegate engagement tools.<sup style="color:#29B7E5;margin:0 5px;font-size:22px;"><i class="fas fa-quote-right"></i></sup></p>
+                                    
+                                    <div class="banner_carousel mb-5 mt-5">
+                                        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                   <img src="images/events-banner.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Powerful event experiences that harness digital technology</p>
+                                                        <p>Let’s deliver extraordinary now.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/events-banner-2.jpg" class="w-100" style="height:400px;"> 
+                                                    <div class="carousel-caption text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Event Concept Development. Event Project Management. Event Marketing + Sponsorship Sales.
+                                                        Event Operations. Event Branding. Media Management. Health + Safety. <span style="color:#29B7E5;">Large-scaling.</span></p>
+                                                        <p>Planning + management expertise across the full event cycle.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item"> 
+                                                    <img src="images/events-banner-3.jpg" class="w-100" style="height:400px;">
+                                                    <div class="carousel-caption  text-left  d-md-block">
+                                                        <p class="mb-5 pb-4">Events should leave an impact</p>
+                                                        <p>Digital-led engagement to immerse the audience, before and after the event.</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>To deliver extraordinary experiences, events should no longer be a one-dimensional
+                                    experience or forgettable for participants. Digital-led audience engagement for live,
+                                    virtual and hybrid conferences is where the future is.</p>
+                                    <p>We provide planning and management expertise across the full event cycle.</p>
+                                    <p>We have outstanding experience in delivering bespoke high-profile international
+                                    events for government and industry clients, across a range of formats, industry sectors
+                                    and locations. Work with the best vendors providing audio visual technologies we also
+                                    leverage our strong partnerships with leading conferencing and event facilities to
+                                    deliver a seamless event experience.</p>
+                                    <p>We specialize in launch events as well as taking on existing events with a clear focus
+                                    on large-scaling and impact growth.</p>
+                                    <p><i class="fas fa-circle" style="font-size: 10px;top:-2px;position: relative;margin-right: 10px;"></i><b>Virtual + Hybrid Events</b><br>
+                                        Events no longer need to be limited to locations and time zone. We can make events
+                                        and on-demand learning more flexible by taking them virtual so busy executives and
+                                        leaders anywhere can be involved.</p>
+                                    <p><i class="fas fa-circle" style="font-size: 10px;top:-2px;position: relative;margin-right: 10px;"></i><b>Networking</b><br>
+                                    Professional networking is arguably the most important element of any event. We
+                                    harness the power of digital technology to take networking to the next level that can
+                                    help form new relationships and partnerships.</p>
+                                    <p><i class="fas fa-circle" style="font-size: 10px;top:-2px;position: relative;margin-right: 10px;"></i><b>Digital Learning</b><br>
+                                    An event should be a powerful, seamless experience that provides a digital repository
+                                    of resources. Create value and digital audience engagement through on-demand
+                                    access to alerts and announcements, articles, case studies, white papers,
+                                    infographics, podcasts, and videos.</p>
+                                    
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3">
+                                               <b class="mb-3  d-inline-block"> Event Concept Development</b><br>
+                                                We can take your vision for an event
+                                                and help bring it to reality. We draw on
+                                                technical experts to develop the event
+                                                concept aligned with your objectives,
+                                                generate leading edge content and
+                                                build an execution plan to deliver a high
+                                                impact event and powerful experience
+                                                for your participants.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3">
+                                                <b class="mb-3  d-inline-block">Event Applications + Web</b><br>
+                                                We have the digital solutions your event
+                                                needs to deliver the event experience
+                                                you want, from start to finish. From
+                                                delegate registration to audience
+                                                engagement, our application and web
+                                                development solutions can deliver a
+                                                seamless, user friendly and powerful
+                                                event experience for your audience and
+                                                streamline your event operations.
+                                            </p>
+                                        </div>
+                                    </div>   
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="col-md-1 space-color">
+                                            <div class="h-100" style="background-color: #29B7E5;"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="pl-3 pr-3 mb-0">
+                                                <b class="mb-3 mt-3 d-inline-block">Event Project Management</b><br>
+                                                We can project manage the complete
+                                                event cycle or provide support
+
+                                                specifically where you need it, from pre-
+                                                event planning to operations and
+
+                                                vendor management or digital strategy
+                                                and media management. We have
+                                                experience in delivering best-in-class
+                                                events across a range of sectors and
+                                                formats.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="pl-3 pr-3 mb-0">
+                                                <b class="mb-3 mt-3 d-inline-block">Event Marketing + Sponsorship
+                                                Sales </b><br>
+                                                A successful event needs to hit the
+                                                mark with marketing and sponsorship
+                                                performance. We have the expertise to
+                                                develop and execute integrated
+                                                marketing and sponsorship plans for
+                                                your event and to win the support of key
+                                                partners and stakeholders by building
+                                                synergy and shared objectives.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3">
+                                        <b class="mt-3 d-inline-block"> Is this interesting?</b> 
+                                        Let’s talk more about what we can do – get in touch by sending an email to <a href="mailto:contact@spps.ae">contact@spps.ae</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_section" id="contactus">
+            <div class="container">
+                <div class="common_heading text-center">
+                    <h2 class="mt-0 mb-5 d-inline-block position-relative">Contact</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <form id="contact-us-form" name="contactForm" method="POST">
+                        <div class="col-md-10">
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="firstName" id="fName" class="form-control" placeholder="First Name*">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="lastName" id="lName" class="form-control" placeholder="Last Name*">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-4">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address*">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="jobTitle" id="jobTitle" class="form-control" placeholder="Job Title">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number*">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="companyName" id="companyName" class="form-control" placeholder="Company Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-4">
+                                        <input type="text" name="city" id="city" class="form-control" placeholder="City*">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-5">
+                                        <textarea placeholder="Message*" id="message" name="message" class="form-control" rows="5" style="font-size: 14px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-blue" id="contact-us-submit" type="button" style="font-size:15px;height:45px;min-width:150px;">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 services_list">
+                        <h5 class="mb-4 mt-4 position-relative">Services</h5>
+                        <p style="font-size:15px;font-weight:600;" class="mb-0">
+                          <a href="#services" style="color:#fff;">  Strategy </a>
+                        </p>
+                        <p style="font-size:15px;font-weight:600;" class="mb-0"><a href="#services" style="color:#fff;"> Communications</a></p>
+                        <p style="font-size:15px;font-weight:600;" class="mb-0"><a href="#services" style="color:#fff;"> Digital Technology</a></p>
+                        <p style="font-size:15px;font-weight:600;" class="mb-0"><a href="#services" style="color:#fff;"> Specialist Events</a></p>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-4 mt-4 position-relative">Direct Contact</h5>
+                        <p style="font-size:15px;" class="mb-0">Email: <a href="mailto:contact@spps.ae" style="color:#fff;">contact@spps.ae</a></p>
+                        <p style="font-size:15px;" class="mb-0">Tel: +971 (0)4 24 33 0 55</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-4 mt-4 position-relative">Location</h5>
+                        <p style="font-size:15px;line-height: 22px;" class="mb-0">
+                            HDS Tower, Cluster M <br>
+                            Jumeirah Lakes Towers <br>
+                            Dubai <br>
+                            United Arab Emirates
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="m-0">
+                            <div class="followus">
+                                <h5 class="mb-4 mt-4 position-relative">Follow us</h5>
+                                <div>
+                                    <a href="javascript:void(0)" class="mr-2">
+                                        <i class="fab fa-twitter-square"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/animate.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript">
+            AOS.init();
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#contact-us-form").validate({
+                    rules:
+                    {
+                        firstName: {
+                            required: true,
+                        },
+                        lastName: {
+                            required: true,
+                        },
+                        email: {
+                            email:true,
+                            required: true,
+                        },
+                        phone: {
+                            required: true,
+                        },
+                        city: {
+                            required: true,
+                        },
+                        message: {
+                            required: true,
+                        },
+
+                    },
+                    messages:
+                    {
+                        firstName: {
+                            required: "First name is required.",
+                        },
+                        lstName: {
+                            required: "Last name is required.",
+                        },
+                        email: {
+                            required: "Email is required.",
+                        },
+                        phone: {
+                            required: "Phone number is required.",
+                        },
+                        city: {
+                            required: "City is required.",
+                        },
+                        message: {
+                            required: "Message is required.",
+                        },
+                    },
+                });
+            });
+
+            $('#contact-us-submit').on('click', function(){
+                var validForm = $('#contact-us-form').valid();
+
+                if (validForm === true) {
+                    $.ajax({
+                        url: '/contact-form-handler.php',
+                        type: 'POST',
+                        // dataType: "json",
+                        data: {
+                            firstName: $('#fName').val(),
+                            lastName: $('#lName').val(),
+                            email: $('#email').val(),
+                            jobTitle: $('#jobTitle').val(),
+                            phone: $('#phone').val(),
+                            companyName: $('#companyName').val(),
+                            city: $('#city').val(),
+                            message: $('#message').val(),
+                        },
+                        beforeSend:function(){
+                            $('#contact-us-submit').prop('disabled', true);
+                        },
+                        complete: function() {
+                            $('#contact-us-submit').prop('disabled', false);
+                        },
+                        success: function(data) {
+                            if (data == 'success'){
+                                alert("Your Message has been sent successfuly. You'll receive a response soon!")
+                            } else {
+                                alert('Something went wrong. Please try again.')
+                            }
+                        }
+                    });
+                }
+            });
+        </script>
+        <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "block";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "block";
+          }
+        }
+        </script>
+        <script>
+        function myFunction1() {
+          var dots = document.getElementById("dots1");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn1");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "block";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "block";
+          }
+        }
+        </script>
+
+        <script type="text/javascript">
+        var lastId,
+            topMenu = $(".header_menu,.services_list"),
+            topMenuHeight = topMenu.outerHeight()+40,
+            
+            menuItems = topMenu.find("a"),
+            
+            scrollItems = menuItems.map(function(){
+              var item = $($(this).attr("href"));
+              if (item.length) { return item; }
+            });
+            
+            var headHeight=$("header").outerHeight();
+        
+        menuItems.click(function(e){
+          var href = $(this).attr("href"),
+              offsetTop = href === "#" ? 0 : $(href).offset().top-headHeight;
+          $('html, body').stop().animate({ 
+              scrollTop: offsetTop
+          },1000);
+          e.preventDefault();
+          $(this).parent("li").addClass("active").siblings().removeClass("active");
+
+        });
+
+        
+        $(window).scroll(function(){
+           
+           var fromTop = $(this).scrollTop()+topMenuHeight;
+           
+           var cur = scrollItems.map(function(){
+             if ($(this).offset().top < fromTop)
+               return this;
+           });
+           
+           cur = cur[cur.length-1];
+           var id = cur && cur.length ? cur[0].id : "";
+           
+            if (lastId !== id) {
+               lastId = id;
+            
+               menuItems
+                 .parent().removeClass("active")
+                 .end().filter("[href='#"+id+"']").parent().addClass("active");
+           }                    
+        });
+        </script>
+        <script type="text/javascript">
+            $("#menuShow").on('click', function(e){
+                $('.header_menu').toggleClass('menu-slide');
+            });
+            $("#menuClose").on('click', function(e){
+                $('.header_menu').toggleClass('menu-slide');
+            });
+
+        </script>
+        <!-- <script type="text/javascript">
+            $(document).ready(function(){
+            $('.services_box a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    
+                });
+            });
+        });
+        </script> -->
+
+    </body>
+</html>
